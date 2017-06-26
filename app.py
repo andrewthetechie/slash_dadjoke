@@ -17,7 +17,7 @@ BACKUP_JOKES = None
 class Config(object):
     def __init__(self):
         """ Joke variables """
-        self.JOKE_FILE = _get_config('BACKUP_JOKES', './jokes.txt')
+        self.JOKE_FILE = _get_config('BACKUP_JOKES', '/jokes.txt')
         self.JOKE_URL = _get_config('JOKE_URL', 'https://icanhazdadjoke.com/')
         self.BIND_IP = _get_config('BIND_IP', '0.0.0.0')
         self.BIND_PORT = _get_config('BIND_PORT', 5000)
